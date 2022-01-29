@@ -4,5 +4,13 @@
 // https://github.com/honkdevelopment/API/blob/main/LICENSE
 
 export default function handler(req, res) {
-    res.status(303).json({ response: '303 See Other', info: "Normal", category: "Redirection HTTP codes", description: "The server sent this response to direct the client to get the requested resource at another URI with a GET request.", credits: 'Made by honk#9999, descriptions from https://developer.mozilla.org/en-US/docs/Web/HTTP/Status.'});
+    res.status(303).json(
+        {
+            "response": "303 See Other",
+            "type": "Normal",
+            "category": "Redirection HTTP codes",
+            "description": "The server sent this response to direct the client to get the requested resource at another URI with a GET request.",
+            "credits": "Made by honk#9999, descriptions from https://developer.mozilla.org/en-US/docs/Web/HTTP/Status."
+        }
+    );
 }

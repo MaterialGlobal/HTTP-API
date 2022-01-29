@@ -4,5 +4,13 @@
 // https://github.com/honkdevelopment/API/blob/main/LICENSE
 
 export default function handler(req, res) {
-    res.status(301).json({ response: '301 Moved Permanently', info: "Normal", category: "Redirection HTTP codes", description: "The URL of the requested resource has been changed permanently. The new URL is given in the response.", credits: 'Made by honk#9999, descriptions from https://developer.mozilla.org/en-US/docs/Web/HTTP/Status.'});
+    res.status(301).json(
+        {
+            "response": "301 Moved Permanently",
+            "type": "Normal",
+            "category": "Redirection HTTP codes",
+            "description": "The URL of the requested resource has been changed permanently. The new URL is given in the response.",
+            "credits": "Made by honk#9999, descriptions from https://developer.mozilla.org/en-US/docs/Web/HTTP/Status."
+        }
+    );
 }
